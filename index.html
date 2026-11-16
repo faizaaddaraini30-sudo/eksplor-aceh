@@ -12,34 +12,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .glass-card {
-            background: rgba(15, 23, 42, 0.75);
+        .light-card {
+            background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(16, 185, 129, 0.2);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-emerald-500 selection:text-white">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-500 selection:text-white">
 
     <!-- Top Navigation Bar -->
-    <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-emerald-900/40">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-emerald-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center shadow-lg shadow-emerald-900/50">
-                    <i class="fa-solid fa-compass text-slate-950 text-xl font-bold"></i>
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center shadow-lg shadow-emerald-600/20">
+                    <i class="fa-solid fa-compass text-white text-xl font-bold"></i>
                 </div>
                 <div>
-                    <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">AcehSmartTourism</span>
-                    <span class="block text-xs text-emerald-400/80 font-medium">Cultural & Ecoturism Tech</span>
+                    <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-emerald-600 to-teal-700 bg-clip-text text-transparent">AcehSmartTourism</span>
+                    <span class="block text-xs text-emerald-600 font-semibold">Cultural & Ecoturism Tech</span>
                 </div>
             </div>
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-                <a href="#destinasi" class="hover:text-emerald-400 transition">Destinasi Wisata</a>
-                <a href="#booking" class="hover:text-emerald-400 transition">Pemesanan 1-Pintu</a>
-                <a href="#suvenir" class="hover:text-emerald-400 transition">Suvenir & Kuliner</a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#destinasi" class="hover:text-emerald-600 transition">Destinasi Wisata</a>
+                <a href="#booking" class="hover:text-emerald-600 transition">Pemesanan 1-Pintu</a>
+                <a href="#suvenir" class="hover:text-emerald-600 transition">Suvenir & Kuliner</a>
             </nav>
             <div>
-                <a href="#booking" class="bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-600/30 transition transform hover:-translate-y-0.5">
+                <a href="#booking" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-600/20 transition transform hover:-translate-y-0.5">
                     <i class="fa-solid fa-ticket mr-2"></i> Reservasi Cepat
                 </a>
             </div>
@@ -47,371 +48,415 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative py-24 lg:py-32 overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950">
-        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <section class="relative py-24 lg:py-32 overflow-hidden bg-gradient-to-b from-emerald-50/60 via-white to-slate-50">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-emerald-950/80 text-emerald-400 border border-emerald-800/60 mb-6 shadow-inner">
-                <i class="fa-solid fa-leaf"></i> Sektor Pariwisata, Kebudayaan & Ekoturisme (Smart Tourism)
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700 border border-emerald-200 mb-6 shadow-sm">
+                <i class="fa-solid fa-leaf"></i> Sektor Pariwisata, Kebudayaan & Ekoturisme (Smart Tourism)[cite: 6]
             </span>
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight max-w-4xl mx-auto leading-tight">
-                Transformasi Digital Pariwisata <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Tanah Rencong</span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tight max-w-4xl mx-auto leading-tight">
+                Transformasi Digital Pariwisata <span class="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent">Tanah Rencong</span>
             </h1>
-            <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto font-normal">
+            <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto font-normal">
                 Platform terpadu reservasi destinasi unggulan serta e-commerce langsung pengrajin dan kuliner khas Aceh[cite: 6].
             </p>
             <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#destinasi" class="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-xl shadow-emerald-500/20 transition text-base">
+                <a href="#destinasi" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-emerald-600/20 transition text-base">
                     Jelajahi 12 Destinasi Lengkap
                 </a>
-                <a href="#suvenir" class="bg-slate-900 hover:bg-slate-800 text-emerald-400 border border-emerald-500/30 font-bold px-8 py-4 rounded-xl transition text-base">
+                <a href="#suvenir" class="bg-white hover:bg-slate-100 text-emerald-700 border border-emerald-300 font-bold px-8 py-4 rounded-xl shadow-sm transition text-base">
                     Belanja Suvenir Khas
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Destinasi Section (Lengkap 12 Destinasi dengan Gambar) -->
-    <section id="destinasi" class="py-20 bg-slate-900/50 border-t border-slate-900">
+    <!-- Destinasi Section -->
+    <section id="destinasi" class="py-20 bg-slate-100/60 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">12 Destinasi Wisata & Ekoturisme Aceh</h2>
-                <p class="mt-4 text-slate-400">Eksplorasi keindahan alam, kekayaan sejarah, dan situs warisan budaya yang terintegrasi secara digital.</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">12 Destinasi Wisata & Ekoturisme Aceh</h2>
+                <p class="mt-4 text-slate-600">Eksplorasi keindahan alam, kekayaan sejarah, dan situs warisan budaya yang terintegrasi secara digital.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
                 <!-- 1. Masjid Raya Baiturrahman -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition duration-300">
                     <div class="relative h-52 overflow-hidden">
-                        <img src="https://www.indonesia.travel/contentassets/4bfdf8e9aec1451d9000ef7915780f73/islamic-attraction-aceh-2.jpeg" alt="Masjid Raya Baiturrahman" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Religi & Sejarah</span>
+                        <img src="https://www.indonesia.travel/contentassets/4bfdf8e9aec1451d9000ef7915780f73/islamic-attraction-aceh-2.jpeg" alt="Masjid Raya" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-emerald-700 text-xs px-3 py-1 rounded-full font-bold shadow">Religi & Sejarah</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">1. Masjid Raya Baiturrahman</h3>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Ikon monumental Kota Banda Aceh dengan arsitektur megah bergaya kolonial-Mughal dan payung elektrik megah.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
-                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Banda Aceh</span>
-                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">1. Masjid Raya Baiturrahman</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">Ikon monumental Kota Banda Aceh dengan arsitektur megah bergaya kolonial-Mughal.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-emerald-600 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Banda Aceh</span>
+                            <a href="#booking" class="text-xs bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-200 hover:bg-emerald-100 font-bold transition">Pesan Tur</a>
                         </div>
                     </div>
                 </div>
-
                 <!-- 2. Pantai Iboih & Pulau Weh -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition duration-300">
                     <div class="relative h-52 overflow-hidden">
-                        <img src="https://www.garispantai.com/wp-content/uploads/2023/05/penginapan-pantai-iboih.jpg" alt="Pulau Weh & Iboih" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Bahari & Ekoturisme</span>
+                        <img src="https://www.garispantai.com/wp-content/uploads/2023/05/penginapan-pantai-iboih.jpg" alt="Pulau Weh" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-emerald-700 text-xs px-3 py-1 rounded-full font-bold shadow">Bahari</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">2. Pantai Iboih & Pulau Weh</h3>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Surga bawah laut dunia dengan spot snorkeling dan diving jernih di Kilometer Nol Indonesia.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
-                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Kota Sabang</span>
-                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">2. Pantai Iboih & Pulau Weh</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">Surga bawah laut dunia dengan spot snorkeling jernih di Kilometer Nol Indonesia.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-emerald-600 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Kota Sabang</span>
+                            <a href="#booking" class="text-xs bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-200 hover:bg-emerald-100 font-bold transition">Pesan Tur</a>
                         </div>
                     </div>
                 </div>
-
                 <!-- 3. Danau Lut Tawar -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition duration-300">
                     <div class="relative h-52 overflow-hidden">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJt5KwSAI6bb0r4MUX9KKEvjxsEw_j1iz4bez-yXqKUBxmmXp_vg9qmsA&s=10" alt="Danau Lut Tawar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Dataran Tinggi</span>
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-emerald-700 text-xs px-3 py-1 rounded-full font-bold shadow">Dataran Tinggi</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">3. Danau Lut Tawar & Takengon</h3>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Keindahan danau vulkanik di dataran tinggi Gayo yang dikelilingi perbukitan hijau dan kebun kopi arabika.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
-                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Tengah</span>
-                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">3. Danau Lut Tawar & Takengon</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">Keindahan danau vulkanik di dataran tinggi Gayo dikelilingi kebun kopi arabika.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-emerald-600 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Tengah</span>
+                            <a href="#booking" class="text-xs bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-200 hover:bg-emerald-100 font-bold transition">Pesan Tur</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- 4. Taman Nasional Gunung Leuser -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                <!-- 4. Gunung Leuser -->
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition duration-300">
                     <div class="relative h-52 overflow-hidden">
                         <img src="https://asset.kompas.com/crops/iQP1ke3JqE4jx6wAqfOFHhNIUWw=/101x0:686x390/1200x800/data/photo/2022/02/12/620739ff9a632.jpeg" alt="Gunung Leuser" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">UNESCO Heritage</span>
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-emerald-700 text-xs px-3 py-1 rounded-full font-bold shadow">UNESCO</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">4. Taman Nasional Gunung Leuser</h3>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Cagar biosfer dunia dan habitat konservasi orangutan Sumatra dengan keanekaragaman hayati terkaya.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
-                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Tenggara</span>
-                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">4. Taman Nasional Gunung Leuser</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">Cagar biosfer dunia dan habitat konservasi orangutan Sumatra.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-emerald-600 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Tenggara</span>
+                            <a href="#booking" class="text-xs bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-200 hover:bg-emerald-100 font-bold transition">Pesan Tur</a>
                         </div>
                     </div>
                 </div>
-
                 <!-- 5. Kepulauan Banyak -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition duration-300">
                     <div class="relative h-52 overflow-hidden">
                         <img src="https://aurorawisata.net/wp-content/uploads/2025/07/pulau-banyak.jpg" alt="Pulau Banyak" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Island Hopping</span>
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-emerald-700 text-xs px-3 py-1 rounded-full font-bold shadow">Island Hopping</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">5. Kepulauan Banyak</h3>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Gugusan pulau tropis eksotis berpasir putih bersih dengan air laut gradasi biru kehijauan yang menawan.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
-                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Singkil</span>
-                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">5. Kepulauan Banyak</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">Gugusan pulau tropis eksotis berpasir putih bersih dengan air laut jernih.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-emerald-600 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Singkil</span>
+                            <a href="#booking" class="text-xs bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-200 hover:bg-emerald-100 font-bold transition">Pesan Tur</a>
                         </div>
                     </div>
                 </div>
-
                 <!-- 6. Air Terjun Blang Kolak -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition duration-300">
                     <div class="relative h-52 overflow-hidden">
-                        <img src="https://cdn.langit7.id/foto/1200/langit7/berita/2021/06/22/1/25/menikmati-panorama-air-terjun-blang-kolam-aceh-rcd.jpg" alt="Air Terjun Blang Kolak" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Ekoturisme</span>
+                        <img src="https://cdn.langit7.id/foto/1200/langit7/berita/2021/06/22/1/25/menikmati-panorama-air-terjun-blang-kolam-aceh-rcd.jpg" alt="Blang Kolak" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-emerald-700 text-xs px-3 py-1 rounded-full font-bold shadow">Ekoturisme</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">6. Air Terjun Blang Kolak</h3>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Keindahan air terjun tersembunyi di tengah hutan tropis sejuk dengan aliran air jernih menyegarkan.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
-                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Tengah</span>
-                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">6. Air Terjun Blang Kolak</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">Keindahan air terjun tersembunyi di tengah hutan tropis sejuk.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-emerald-600 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Tengah</span>
+                            <a href="#booking" class="text-xs bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-200 hover:bg-emerald-100 font-bold transition">Pesan Tur</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- 7. Pantai Lhok Nga & Lampuuk -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                <!-- 7. Pantai Lampuuk -->
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition duration-300">
                     <div class="relative h-52 overflow-hidden">
-                        <img src="https://genpi.id/wp-content/uploads/2020/09/Foto-Gambar-Pantai-Lampuuk-Aceh-Besar-@aneukaceh_travel.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Pantai & Sunset</span>
+                        <img src="https://genpi.id/wp-content/uploads/2020/09/Foto-Gambar-Pantai-Lampuuk-Aceh-Besar-@aneukaceh_travel.jpg" alt="Lampuuk" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-emerald-700 text-xs px-3 py-1 rounded-full font-bold shadow">Pantai</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">7. Pantai Lhok Nga & Lampuuk</h3>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Garisan pantai pasir putih luas favorit peselancar dunia dengan panorama matahari terbenam spektakuler.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
-                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Besar</span>
-                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">7. Pantai Lhok Nga & Lampuuk</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">Garisan pantai pasir putih luas favorit peselancar dunia dengan sunset indah.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-emerald-600 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Besar</span>
+                            <a href="#booking" class="text-xs bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-200 hover:bg-emerald-100 font-bold transition">Pesan Tur</a>
                         </div>
                     </div>
                 </div>
-
                 <!-- 8. Rumah Cut Nyak Dhien -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition duration-300">
                     <div class="relative h-52 overflow-hidden">
-                        <img src="https://indonesiakaya.com/wp-content/uploads/2020/10/Rumah_ini_menjadi_saksi_sejarah_perjuangan_Cut_Nyak_Dhien_dan_Teuku_Umar_melawan_Hindia_Belanda.jpg" alt="Rumah Cut Nyak Dhien" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Cagar Budaya</span>
+                        <img src="https://indonesiakaya.com/wp-content/uploads/2020/10/Rumah_ini_menjadi_saksi_sejarah_perjuangan_Cut_Nyak_Dhien_dan_Teuku_Umar_melawan_Hindia_Belanda.jpg" alt="Cut Nyak Dhien" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-emerald-700 text-xs px-3 py-1 rounded-full font-bold shadow">Cagar Budaya</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">8. Rumah Cut Nyak Dhien</h3>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Situs sejarah rumah adat pahlawan nasional emansipasi wanita Aceh yang penuh nilai edukasi.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
-                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Besar</span>
-                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">8. Rumah Cut Nyak Dhien</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">Situs sejarah rumah adat pahlawan nasional pahlawan emansipasi wanita.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-emerald-600 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Besar</span>
+                            <a href="#booking" class="text-xs bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-200 hover:bg-emerald-100 font-bold transition">Pesan Tur</a>
                         </div>
                     </div>
                 </div>
-
                 <!-- 9. Gua Loyang Koro -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition duration-300">
                     <div class="relative h-52 overflow-hidden">
-                        <img src="https://asset.tribunnews.com/HjIG6i03tz6Okc8soAOKkg3lB8o=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/aceh/foto/bank/originals/Gua-Loyang-Koro-Aceh-Tengah-01.jpg" alt="Gua Loyang Koro" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Sejarah Purba</span>
+                        <img src="https://asset.tribunnews.com/HjIG6i03tz6Okc8soAOKkg3lB8o=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/aceh/foto/bank/originals/Gua-Loyang-Koro-Aceh-Tengah-01.jpg" alt="Loyang Koro" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-emerald-700 text-xs px-3 py-1 rounded-full font-bold shadow">Sejarah Purba</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">9. Gua Loyang Koro</h3>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Gua purbakala di tepi Danau Lut Tawar yang menyimpan legenda dan formasi stalaktit eksotis.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
-                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Tengah</span>
-                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">9. Gua Loyang Koro</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">Gua purbakala di tepi Danau Lut Tawar yang menyimpan legenda.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-emerald-600 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Tengah</span>
+                            <a href="#booking" class="text-xs bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-200 hover:bg-emerald-100 font-bold transition">Pesan Tur</a>
                         </div>
                     </div>
                 </div>
-
                 <!-- 10. Puncak Geurutee -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition duration-300">
                     <div class="relative h-52 overflow-hidden">
-                        <img src="https://img.cnt.traveloka.com/tvlk/blog/2025/05/shutterstock_2533816127.jpg?tr=q-70,c-at_max,w-1000,h-600" alt="Puncak Geurutee" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Panorama Samudera</span>
+                        <img src="https://img.cnt.traveloka.com/tvlk/blog/2025/05/shutterstock_2533816127.jpg?tr=q-70,c-at_max,w-1000,h-600" alt="Geurutee" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-emerald-700 text-xs px-3 py-1 rounded-full font-bold shadow">Panorama</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">10. Puncak Geurutee</h3>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Titik peristirahatan megah dengan pemandangan gugusan pulau kecil di Samudera Hindia yang memukau.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
-                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Jaya</span>
-                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">10. Puncak Geurutee</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">Titik peristirahatan megah dengan pemandangan gugusan pulau kecil di Samudera Hindia.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-emerald-600 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Jaya</span>
+                            <a href="#booking" class="text-xs bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-200 hover:bg-emerald-100 font-bold transition">Pesan Tur</a>
                         </div>
                     </div>
                 </div>
-
                 <!-- 11. Air Terjun Peucarak -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition duration-300">
                     <div class="relative h-52 overflow-hidden">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFDtH7nNepVkJyw79ZhTyhTh4j854mhVvji_09BY5_O0u51O6MBbqW9qw&s=10" alt="Air Terjun Peucarak" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Hidden Paradise</span>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFDtH7nNepVkJyw79ZhTyhTh4j854mhVvji_09BY5_O0u51O6MBbqW9qw&s=10" alt="Peucarak" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-emerald-700 text-xs px-3 py-1 rounded-full font-bold shadow">Hidden Paradise</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">11. Air Terjun Peucarak</h3>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Destinasi wisata air terjun tersembunyi dengan suasana sejuk alami di kawasan pedesaan selatan Aceh.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
-                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Selatan</span>
-                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">11. Air Terjun Peucarak</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">Destinasi wisata air terjun tersembunyi dengan suasana sejuk alami.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-emerald-600 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Selatan</span>
+                            <a href="#booking" class="text-xs bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-200 hover:bg-emerald-100 font-bold transition">Pesan Tur</a>
                         </div>
                     </div>
                 </div>
-
                 <!-- 12. Benteng Indra Patra -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition duration-300">
                     <div class="relative h-52 overflow-hidden">
-                        <img src="https://www.budayaaceh.com/assets/images/frontend/cagar/gallery/68c77caa62c121757904042.jpg" alt="Benteng Indra Patra" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Situs Purbakala</span>
+                        <img src="https://www.budayaaceh.com/assets/images/frontend/cagar/gallery/68c77caa62c121757904042.jpg" alt="Indra Patra" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-emerald-700 text-xs px-3 py-1 rounded-full font-bold shadow">Situs Purbakala</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">12. Benteng Indra Patra</h3>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Benteng pertahanan historis peninggalan Kerajaan Hindu Purba yang menghadap langsung ke Selat Malaka.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
-                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Besar</span>
-                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">12. Benteng Indra Patra</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">Benteng pertahanan historis peninggalan Kerajaan Hindu Purba menghadap Selat Malaka.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-emerald-600 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Besar</span>
+                            <a href="#booking" class="text-xs bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-200 hover:bg-emerald-100 font-bold transition">Pesan Tur</a>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Integrated Smart Tourism Booking Section -->
-    <section id="booking" class="py-20 bg-slate-900/40">
+    <!-- Booking Section with Ticket Output -->
+    <section id="booking" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-extrabold text-white">Pemesanan Satu Pintu (Integrated Smart Booking)</h2>
-                <p class="mt-2 text-slate-400">Reservasi desa wisata, homestay warga, dan paket tur edukasi dalam satu platform terpadu[cite: 6].</p>
+                <h2 class="text-3xl font-extrabold text-slate-900">Pemesanan Satu Pintu (Integrated Smart Booking)</h2>
+                <p class="mt-2 text-slate-600">Reservasi desa wisata, homestay warga, dan paket tur edukasi dalam satu platform terpadu[cite: 6].</p>
             </div>
             
-            <form onsubmit="event.preventDefault(); alert('Pemesanan tur berhasil dikirim! Konfirmasi tiket telah dikirim ke WhatsApp Anda.');" class="glass-card p-8 rounded-3xl space-y-6">
+            <form id="bookingForm" onsubmit="handleBooking(event)" class="light-card p-8 rounded-3xl space-y-6 shadow-xl border border-emerald-100">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-sm font-medium text-slate-300 mb-2">Nama Lengkap</label>
-                        <input type="text" required placeholder="Masukkan nama Anda" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500">
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Nama Lengkap</label>
+                        <input type="text" id="nama" required placeholder="Masukkan nama Anda" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-600/20">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-slate-300 mb-2">Nomor WhatsApp</label>
-                        <input type="tel" required placeholder="08xxxxxxxxxx" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500">
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Nomor WhatsApp</label>
+                        <input type="tel" id="whatsapp" required placeholder="08xxxxxxxxxx" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-600/20">
                     </div>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-sm font-medium text-slate-300 mb-2">Pilih Destinasi / Paket</label>
-                        <select class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500">
-                            <option>Pulau Weh & Iboih Diving Pass</option>
-                            <option>Takengon Gayo Coffee & Highland Tour</option>
-                            <option>Taman Nasional Gunung Leuser Ecotourism</option>
-                            <option>Banda Aceh Heritage & Religious Tour</option>
-                            <option>Kepulauan Banyak Island Hopping</option>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Pilih Destinasi / Paket</label>
+                        <select id="destinasiPilihan" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-600/20">
+                            <option>1. Masjid Raya Baiturrahman (Banda Aceh)</option>
+                            <option>2. Pantai Iboih & Pulau Weh (Sabang)</option>
+                            <option>3. Danau Lut Tawar & Takengon (Aceh Tengah)</option>
+                            <option>4. Taman Nasional Gunung Leuser (Aceh Tenggara)</option>
+                            <option>5. Kepulauan Banyak (Aceh Singkil)</option>
+                            <option>6. Air Terjun Blang Kolak (Aceh Tengah)</option>
+                            <option>7. Pantai Lhok Nga & Lampuuk (Aceh Besar)</option>
+                            <option>8. Rumah Cut Nyak Dhien (Aceh Besar)</option>
+                            <option>9. Gua Loyang Koro (Aceh Tengah)</option>
+                            <option>10. Puncak Geurutee (Aceh Jaya)</option>
+                            <option>11. Air Terjun Peucarak (Aceh Selatan)</option>
+                            <option>12. Benteng Indra Patra (Aceh Besar)</option>
                         </select>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-slate-300 mb-2">Tanggal Kunjungan</label>
-                        <input type="date" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500">
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Tanggal Kunjungan</label>
+                        <input type="date" id="tanggal" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-600/20">
                     </div>
                 </div>
-                <button type="submit" class="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-extrabold py-4 rounded-xl shadow-lg transition">
+                <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-extrabold py-4 rounded-xl shadow-lg transition">
                     Konfirmasi & Pesan Sekarang
                 </button>
             </form>
+
+            <!-- Kartu Tiket E-Voucher Digital -->
+            <div id="ticketCard" class="hidden mt-8 bg-emerald-50 border-2 border-emerald-500 p-8 rounded-3xl shadow-xl relative">
+                <div class="absolute top-4 right-4 bg-emerald-600 text-white font-bold text-xs px-3 py-1 rounded-full uppercase shadow">
+                    E-Ticket Confirmed
+                </div>
+                <h3 class="text-2xl font-extrabold text-slate-900 mb-4"><i class="fa-solid fa-ticket text-emerald-600 mr-2"></i> Bukti Reservasi AcehSmartTourism</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-700 border-t border-emerald-200 pt-4">
+                    <div>
+                        <p class="text-slate-500 text-xs font-semibold">Nama Pemesan:</p>
+                        <p id="resNama" class="font-extrabold text-slate-900 text-base"></p>
+                    </div>
+                    <div>
+                        <p class="text-slate-500 text-xs font-semibold">Nomor WhatsApp:</p>
+                        <p id="resWa" class="font-extrabold text-slate-900 text-base"></p>
+                    </div>
+                    <div>
+                        <p class="text-slate-500 text-xs font-semibold">Destinasi Terpilih:</p>
+                        <p id="resDestinasi" class="font-extrabold text-emerald-700 text-base"></p>
+                    </div>
+                    <div>
+                        <p class="text-slate-500 text-xs font-semibold">Tanggal Kunjungan:</p>
+                        <p id="resTanggal" class="font-extrabold text-slate-900 text-base"></p>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-emerald-200 flex justify-between items-center text-xs text-emerald-800">
+                    <span>ID Transaksi: <strong id="resId"></strong></span>
+                    <button onclick="window.print()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2 rounded-xl shadow">
+                        <i class="fa-solid fa-print mr-1"></i> Cetak / Simpan Tiket
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Suvenir & Kuliner E-Commerce Section -->
-    <section id="suvenir" class="py-20 bg-slate-950 border-t border-slate-900">
+    <section id="suvenir" class="py-20 bg-slate-100/60 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-emerald-400 font-semibold text-xs tracking-wider uppercase bg-emerald-900/40 px-3 py-1 rounded-full border border-emerald-700/50">E-Commerce Lokal</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4">Suvenir & Kuliner Khas Aceh</h2>
-                <p class="mt-4 text-slate-400">Hubungan langsung wisatawan dengan pengrajin suvenir dan produsen kuliner lokal berkualitas ekspor.</p>
+                <span class="text-emerald-700 font-bold text-xs tracking-wider uppercase bg-emerald-100 px-3 py-1 rounded-full border border-emerald-200">E-Commerce Lokal</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4">Suvenir & Kuliner Khas Aceh</h2>
+                <p class="mt-4 text-slate-600">Hubungan langsung wisatawan dengan pengrajin suvenir dan produsen kuliner lokal berkualitas ekspor.</p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                
                 <!-- Produk 1 -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition">
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/3/18/1fd3a8bb-e0d0-42f9-bc71-b466753bc7f8.jpg.webp" alt="Kopi Gayo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-2 right-2 bg-emerald-600 text-slate-950 font-bold text-xs px-2.5 py-1 rounded-lg">Terlaris</span>
+                        <span class="absolute top-2 right-2 bg-emerald-600 text-white font-bold text-xs px-2.5 py-1 rounded-lg shadow">Terlaris</span>
                     </div>
                     <div class="p-5">
-                        <h3 class="font-bold text-white text-base mb-1">Kopi Arabika Gayo Premium</h3>
-                        <p class="text-xs text-slate-400 mb-3">Biji kopi pilihan dataran tinggi Gayo sangrai khas.</p>
+                        <h3 class="font-bold text-slate-900 text-base mb-1">Kopi Arabika Gayo Premium</h3>
+                        <p class="text-xs text-slate-500 mb-3">Biji kopi pilihan dataran tinggi Gayo sangrai khas.</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-emerald-400 font-extrabold text-sm">Rp 85.000</span>
-                            <button onclick="alert('Kopi Gayo berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-950 hover:bg-emerald-900 text-emerald-300 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-800 transition">
+                            <span class="text-emerald-600 font-extrabold text-sm">Rp 85.000</span>
+                            <button onclick="alert('Kopi Gayo berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-300 transition">
                                 <i class="fa-solid fa-cart-plus mr-1"></i> Beli
                             </button>
                         </div>
                     </div>
                 </div>
-
                 <!-- Produk 2 -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition">
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://cdn.ajnn.net/files/images/archives/20221123-unnamed-51.jpg" alt="Minyak Nilam" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-2 right-2 bg-emerald-600 text-slate-950 font-bold text-xs px-2.5 py-1 rounded-lg">High Value</span>
+                        <span class="absolute top-2 right-2 bg-emerald-600 text-white font-bold text-xs px-2.5 py-1 rounded-lg shadow">High Value</span>
                     </div>
                     <div class="p-5">
-                        <h3 class="font-bold text-white text-base mb-1">Parfum Minyak Nilam Aceh</h3>
-                        <p class="text-xs text-slate-400 mb-3">Ekstrak patchouli oil murni kualitas ekspor dunia.</p>
+                        <h3 class="font-bold text-slate-900 text-base mb-1">Parfum Minyak Nilam Aceh</h3>
+                        <p class="text-xs text-slate-500 mb-3">Ekstrak patchouli oil murni kualitas ekspor dunia.</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-emerald-400 font-extrabold text-sm">Rp 150.000</span>
-                            <button onclick="alert('Parfum Minyak Nilam berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-950 hover:bg-emerald-900 text-emerald-300 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-800 transition">
+                            <span class="text-emerald-600 font-extrabold text-sm">Rp 150.000</span>
+                            <button onclick="alert('Parfum Minyak Nilam berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-300 transition">
                                 <i class="fa-solid fa-cart-plus mr-1"></i> Beli
                             </button>
                         </div>
                     </div>
                 </div>
-
                 <!-- Produk 3 -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition">
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://cnc-magazine.oramiland.com/parenting/images/Kain_Khas_Aceh_dan_Motifnya.width-800.format-webp.webp" alt="Kain Tenun" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-2 right-2 bg-emerald-600 text-slate-950 font-bold text-xs px-2.5 py-1 rounded-lg">Handmade</span>
+                        <span class="absolute top-2 right-2 bg-emerald-600 text-white font-bold text-xs px-2.5 py-1 rounded-lg shadow">Handmade</span>
                     </div>
                     <div class="p-5">
-                        <h3 class="font-bold text-white text-base mb-1">Kain Tenun Motif Pinto Aceh</h3>
-                        <p class="text-xs text-slate-400 mb-3">Tenun tradisional bermotif khas budaya Aceh.</p>
+                        <h3 class="font-bold text-slate-900 text-base mb-1">Kain Tenun Motif Pinto Aceh</h3>
+                        <p class="text-xs text-slate-500 mb-3">Tenun tradisional bermotif khas budaya Aceh.</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-emerald-400 font-extrabold text-sm">Rp 200.000</span>
-                            <button onclick="alert('Kain Tenun berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-950 hover:bg-emerald-900 text-emerald-300 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-800 transition">
+                            <span class="text-emerald-600 font-extrabold text-sm">Rp 200.000</span>
+                            <button onclick="alert('Kain Tenun berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-300 transition">
                                 <i class="fa-solid fa-cart-plus mr-1"></i> Beli
                             </button>
                         </div>
                     </div>
                 </div>
-
                 <!-- Produk 4 -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition">
+                <div class="light-card rounded-2xl overflow-hidden group hover:shadow-xl transition">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://www.acehtrend.com/files/images/o_1al930s7lfbj12lg1qe51kc019opa.jpg" alt="Kuliner Keumamah" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-2 right-2 bg-emerald-600 text-slate-950 font-bold text-xs px-2.5 py-1 rounded-lg">Vacum Pack</span>
+                        <img src="https://www.acehtrend.com/files/images/o_1al930s7lfbj12lg1qe51kc019opa.jpg" alt="Keumamah" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-2 right-2 bg-emerald-600 text-white font-bold text-xs px-2.5 py-1 rounded-lg shadow">Vacum Pack</span>
                     </div>
                     <div class="p-5">
-                        <h3 class="font-bold text-white text-base mb-1">Ikan Kayu Keumamah Vakum</h3>
-                        <p class="text-xs text-slate-400 mb-3">Kuliner tradisional olahan ikan higienis zero-waste.</p>
+                        <h3 class="font-bold text-slate-900 text-base mb-1">Ikan Kayu Keumamah Vakum</h3>
+                        <p class="text-xs text-slate-500 mb-3">Kuliner tradisional olahan ikan higienis zero-waste.</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-emerald-400 font-extrabold text-sm">Rp 65.000</span>
-                            <button onclick="alert('Keumamah Vakum berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-950 hover:bg-emerald-900 text-emerald-300 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-800 transition">
+                            <span class="text-emerald-600 font-extrabold text-sm">Rp 65.000</span>
+                            <button onclick="alert('Keumamah Vakum berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-300 transition">
                                 <i class="fa-solid fa-cart-plus mr-1"></i> Beli
                             </button>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-950 border-t border-emerald-950/60 py-12 text-center text-slate-500 text-sm">
+    <footer class="bg-white border-t border-slate-200 py-12 text-center text-slate-500 text-sm">
         <div class="max-w-7xl mx-auto px-4">
-            <p class="text-emerald-400 font-bold mb-2">AcehSmartTourism</p>
-            <p>&copy; 2026 Sektor Pariwisata, Kebudayaan & Ekoturisme (Smart Tourism & Cultural Tech). All Rights Reserved.</p>
+            <p class="text-emerald-700 font-bold mb-2">AcehSmartTourism</p>
+            <p>&copy; 2026 Sektor Pariwisata, Kebudayaan & Ekoturisme (Smart Tourism & Cultural Tech). All Rights Reserved[cite: 6].</p>
         </div>
     </footer>
 
+    <!-- JavaScript untuk Menampilkan E-Ticket -->
+    <script>
+        function handleBooking(event) {
+            event.preventDefault();
+            
+            const nama = document.getElementById('nama').value;
+            const wa = document.getElementById('whatsapp').value;
+            const destinasi = document.getElementById('destinasiPilihan').value;
+            const tanggal = document.getElementById('tanggal').value;
+            
+            const randomId = 'AST-' + Math.floor(100000 + Math.random() * 900000);
+
+            document.getElementById('resNama').innerText = nama;
+            document.getElementById('resWa').innerText = wa;
+            document.getElementById('resDestinasi').innerText = destinasi;
+            document.getElementById('resTanggal').innerText = tanggal;
+            document.getElementById('resId').innerText = randomId;
+
+            const ticketCard = document.getElementById('ticketCard');
+            ticketCard.classList.remove('hidden');
+            ticketCard.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
