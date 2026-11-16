@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcehSmart Tourism & Cultural Tech - Platform Pariwisata Digital</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-emerald-900/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center shadow-lg shadow-emerald-900/50">
+                    <i class="fa-solid fa-compass text-slate-950 text-xl font-bold"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">AcehSmartTourism</span>
+                    <span class="block text-xs text-emerald-400/80 font-medium">Cultural & Ecoturism Tech</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#destinasi" class="hover:text-emerald-400 transition">Destinasi (10+)</a>
+                <a href="#ar-vr" class="hover:text-emerald-400 transition">AR/VR Storytelling</a>
+                <a href="#booking" class="hover:text-emerald-400 transition">Pemesanan 1-Pintu</a>
+                <a href="#suvenir" class="hover:text-emerald-400 transition">Suvenir & Kuliner</a>
+            </nav>
+            <div>
+                <a href="#booking" class="bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-600/30 transition transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-ticket mr-2"></i> Reservasi Cepat
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-24 lg:py-32 overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-emerald-950/80 text-emerald-400 border border-emerald-800/60 mb-6 shadow-inner">
+                <i class="fa-solid fa-leaf"></i> Sektor Pariwisata, Kebudayaan & Ekoturisme (Smart Tourism)
+            </span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight max-w-4xl mx-auto leading-tight">
+                Transformasi Digital Pariwisata <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Tanah Rencong</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto font-normal">
+                Platform terpadu reservasi destinasi, simulasi budaya AR/VR immersif, serta e-commerce langsung pengrajin dan kuliner khas Aceh[cite: 6].
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#destinasi" class="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-xl shadow-emerald-500/20 transition text-base">
+                    Jelajahi 10+ Destinasi Unggulan
+                </a>
+                <a href="#ar-vr" class="bg-slate-900 hover:bg-slate-800 text-emerald-400 border border-emerald-500/30 font-bold px-8 py-4 rounded-xl transition text-base">
+                    Coba Simulasi AR/VR
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinasi Section (10+ Destinasi Lengkap dengan Gambar & Detail) -->
+    <section id="destinasi" class="py-20 bg-slate-900/50 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">10+ Destinasi Wisata & Ekoturisme Aceh</h2>
+                <p class="mt-4 text-slate-400">Eksplorasi keindahan alam, kekayaan sejarah, dan situs warisan budaya yang terintegrasi secara digital.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Destinasi 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1596401309653-ce25f445d41c?auto=format&fit=crop&w=800&q=80" alt="Masjid Raya Baiturrahman" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Religi & Sejarah</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Masjid Raya Baiturrahman</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Ikon monumental Kota Banda Aceh dengan arsitektur megah bergaya kolonial-Mughal dan payung elektrik megah.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Banda Aceh</span>
+                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80" alt="Pulau Weh & Iboih" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Bahari & Ekoturisme</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Pantai Iboih & Pulau Weh</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Surga bawah laut dunia dengan spot *snorkeling* dan *diving* jernih di Kilometer Nol Indonesia.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Kota Sabang</span>
+                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Danau Lut Tawar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Dataran Tinggi</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Danau Lut Tawar & Takengon</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Keindahan danau vulkanik di dataran tinggi Gayo yang dikelilingi perbukitan hijau dan kebun kopi arabika.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Tengah</span>
+                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 4 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80" alt="Gunung Leuser" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">UNESCO Heritage</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Taman Nasional Gunung Leuser</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Cagar biosfer dunia dan habitat konservasi orangutan Sumatra dengan keanekaragaman hayati terkaya.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Tenggara</span>
+                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 5 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Pulau Banyak" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Island Hopping</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Kepulauan Banyak</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Gugusan pulau tropis eksotis berpasir putih bersih dengan air laut gradasi biru kehijauan yang menawan.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Singkil</span>
+                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 6 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" alt="Air Terjun Blang Kolak" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Ekoturisme</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Air Terjun Blang Kolak</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Keindahan air terjun tersembunyi di tengah hutan tropis sejuk dengan aliran air jernih menyegarkan.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Tengah</span>
+                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 7 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Pantai Lampuuk" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Pantai & Sunset</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Pantai Lhok Nga & Lampuuk</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Garisan pantai pasir putih luas favorit peselancar dunia dengan panorama matahari terbenam spektakuler.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Besar</span>
+                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 8 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80" alt="Rumah Cut Nyak Dhien" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Cagar Budaya</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Rumah Cut Nyak Dhien</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Situs sejarah rumah adat pahlawan nasional pahlawan emansipasi wanita Aceh yang penuh nilai edukasi.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Besar</span>
+                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 9 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80" alt="Gua Loyang Koro" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Sejarah Purba</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Gua Loyang Koro</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Gua purbakala di tepi Danau Lut Tawar yang menyimpan legenda dan formasi stalaktit eksotis.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Tengah</span>
+                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 10 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition duration-300 lg:col-span-1 lg:col-start-2">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" alt="Puncak Geurutee" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur text-emerald-400 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">Panorama Samudera</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Puncak Geurutee</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Titik peristirahatan megah dengan pemandangan gugusan pulau kecil di Samudera Hindia yang memukau.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                            <span class="text-emerald-400 font-bold text-sm"><i class="fa-solid fa-location-dot mr-1"></i> Aceh Jaya</span>
+                            <a href="#booking" class="text-xs bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800 hover:bg-emerald-900 font-semibold">Pesan Tur</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- AR/VR Storytelling Simulator Section -->
+    <section id="ar-vr" class="py-20 bg-slate-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-emerald-950/60 to-slate-900 border border-emerald-500/30 rounded-3xl p-8 sm:p-12 shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-emerald-400 font-semibold text-xs tracking-wider uppercase bg-emerald-900/40 px-3 py-1 rounded-full border border-emerald-700/50">Immersive Tech</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4">Simulasi AR/VR Cultural Storytelling</h2>
+                        <p class="mt-4 text-slate-300 text-base leading-relaxed">
+                            Nikmati pengalaman menjelajahi situs cagar budaya Aceh masa lampau menggunakan teknologi Augmented Reality dan Virtual Reality interaktif langsung dari browser Anda[cite: 6].
+                        </p>
+                        <ul class="mt-6 space-y-3 text-slate-300 text-sm">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-3"></i> Rekonstruksi 3D Masjid Raya Baiturrahman Tempo Dulu</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-3"></i> Tur Virtual Kapal Perang Kesultanan Aceh</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-3"></i> Audio Narasi Sejarah Multi-Bahasa & Adat Lokal</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-900/90 rounded-2xl p-6 border border-slate-800 text-center relative overflow-hidden shadow-inner">
+                        <div class="absolute inset-0 bg-[radial-gradient(#10b981_1px,transparent_1px)] opacity-10"></div>
+                        <div class="py-12 relative z-10">
+                            <div class="w-20 h-20 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-emerald-500/40 text-emerald-400 text-3xl animate-pulse">
+                                <i class="fa-solid fa-vr-cardboard"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Mode VR Viewer Aktif</h3>
+                            <p class="text-slate-400 text-sm mb-6">Pilih simulasi situs bersejarah untuk memulai pengalaman virtual 360°.</p>
+                            <button onclick="alert('Memuat modul AR/VR WebGL... Selamat menikmati tur virtual Aceh!')" class="bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-xl shadow-lg transition">
+                                <i class="fa-solid fa-play mr-2"></i> Luncurkan Simulasi AR/VR
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrated Smart Tourism Booking Section -->
+    <section id="booking" class="py-20 bg-slate-900/40">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-white">Pemesanan Satu Pintu (Integrated Smart Booking)</h2>
+                <p class="mt-2 text-slate-400">Reservasi desa wisata, homestay warga, dan paket tur edukasi dalam satu platform terpadu[cite: 6].</p>
+            </div>
+            
+            <form onsubmit="event.preventDefault(); alert('Pemesanan tur berhasil dikirim! Konfirmasi tiket telah dikirim ke email Anda.');" class="glass-card p-8 rounded-3xl space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Nama Lengkap</label>
+                        <input type="text" required placeholder="Masukkan nama Anda" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Nomor WhatsApp</label>
+                        <input type="tel" required placeholder="08xxxxxxxxxx" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Pilih Destinasi / Paket</label>
+                        <select class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500">
+                            <option>Pulau Weh & Iboih Diving Pass</option>
+                            <option>Takengon Gayo Coffee & Highland Tour</option>
+                            <option>Taman Nasional Gunung Leuser Ecotourism</option>
+                            <option>Banda Aceh Heritage & Religious Tour</option>
+                            <option>Kepulauan Banyak Island Hopping</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Tanggal Kunjungan</label>
+                        <input type="date" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500">
+                    </div>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-extrabold py-4 rounded-xl shadow-lg transition">
+                    Konfirmasi & Pesan Sekarang
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Suvenir & Kuliner E-Commerce Section (Lengkap dengan Gambar Produk) -->
+    <section id="suvenir" class="py-20 bg-slate-950 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emerald-400 font-semibold text-xs tracking-wider uppercase bg-emerald-900/40 px-3 py-1 rounded-full border border-emerald-700/50">E-Commerce Lokal</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4">Suvenir & Kuliner Khas Aceh</h2>
+                <p class="mt-4 text-slate-400">Hubungan langsung wisatawan dengan pengrajin suvenir dan produsen kuliner lokal berkualitas ekspor[cite: 6].</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Produk 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Kopi Gayo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-2 right-2 bg-emerald-600 text-slate-950 font-bold text-xs px-2.5 py-1 rounded-lg">Terlaris</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-base mb-1">Kopi Arabika Gayo Premium</h3>
+                        <p class="text-xs text-slate-400 mb-3">Biji kopi pilihan dataran tinggi Gayo sangrai khas.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-emerald-400 font-extrabold text-sm">Rp 85.000</span>
+                            <button onclick="alert('Kopi Gayo berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-950 hover:bg-emerald-900 text-emerald-300 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-800 transition">
+                                <i class="fa-solid fa-cart-plus mr-1"></i> Beli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1608248597359-99435b5a7962?auto=format&fit=crop&w=600&q=80" alt="Minyak Nilam" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-2 right-2 bg-emerald-600 text-slate-950 font-bold text-xs px-2.5 py-1 rounded-lg">High Value</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-base mb-1">Parfum Minyak Nilam Aceh</h3>
+                        <p class="text-xs text-slate-400 mb-3">Ekstrak patchouli oil murni kualitas ekspor dunia.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-emerald-400 font-extrabold text-sm">Rp 150.000</span>
+                            <button onclick="alert('Parfum Minyak Nilam berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-950 hover:bg-emerald-900 text-emerald-300 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-800 transition">
+                                <i class="fa-solid fa-cart-plus mr-1"></i> Beli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=600&q=80" alt="Kain Tenun" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-2 right-2 bg-emerald-600 text-slate-950 font-bold text-xs px-2.5 py-1 rounded-lg">Handmade</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-base mb-1">Kain Tenun Motif Pinto Aceh</h3>
+                        <p class="text-xs text-slate-400 mb-3">Tenun tradisional bermotif khas budaya Aceh.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-emerald-400 font-extrabold text-sm">Rp 350.000</span>
+                            <button onclick="alert('Kain Tenun berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-950 hover:bg-emerald-900 text-emerald-300 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-800 transition">
+                                <i class="fa-solid fa-cart-plus mr-1"></i> Beli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk 4 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Kuliner Keumamah" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-2 right-2 bg-emerald-600 text-slate-950 font-bold text-xs px-2.5 py-1 rounded-lg">Vacum Pack</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-base mb-1">Ikan Kayu Keumamah Vakum</h3>
+                        <p class="text-xs text-slate-400 mb-3">Kuliner tradisional olahan ikan higienis zero-waste.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-emerald-400 font-extrabold text-sm">Rp 65.000</span>
+                            <button onclick="alert('Keumamah Vakum berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-950 hover:bg-emerald-900 text-emerald-300 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-800 transition">
+                                <i class="fa-solid fa-cart-plus mr-1"></i> Beli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-emerald-950/60 py-12 text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="text-emerald-400 font-bold mb-2">AcehSmartTourism - Tugas Akhir Web Programming & Technopreneurship</p>
+            <p>&copy; 2026 Sektor Pariwisata, Kebudayaan & Ekoturisme (Smart Tourism & Cultural Tech). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
