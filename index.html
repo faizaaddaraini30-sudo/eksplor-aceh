@@ -18,26 +18,11 @@
             border: 1px solid rgba(16, 185, 129, 0.2);
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
         }
-        /* Pengaturan Khusus Saat Mencetak/Simpan PDF */
         @media print {
-            body * {
-                visibility: hidden;
-            }
-            #ticketCard, #ticketCard * {
-                visibility: visible;
-            }
-            #ticketCard {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                border: none !important;
-                box-shadow: none !important;
-                background: #ffffff !important;
-            }
-            .no-print {
-                display: none !important;
-            }
+            body * { visibility: hidden; }
+            #ticketCard, #ticketCard * { visibility: visible; }
+            #ticketCard { position: absolute; left: 0; top: 0; width: 100%; border: none !important; box-shadow: none !important; background: #ffffff !important; }
+            .no-print { display: none !important; }
         }
     </style>
 </head>
@@ -60,9 +45,14 @@
                 <a href="#booking" class="hover:text-emerald-600 transition">Pemesanan 1-Pintu</a>
                 <a href="#suvenir" class="hover:text-emerald-600 transition">Suvenir & Kuliner</a>
             </nav>
-            <div>
+            <div class="flex items-center space-x-4">
+                <!-- Tombol Indikator Keranjang -->
+                <a href="#keranjang" class="relative bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 px-4 py-2 rounded-xl font-bold text-sm transition flex items-center">
+                    <i class="fa-solid fa-cart-shopping mr-2"></i> Keranjang
+                    <span id="cartCount" class="ml-2 bg-emerald-600 text-white text-xs px-2 py-0.5 rounded-full">0</span>
+                </a>
                 <a href="#booking" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-600/20 transition transform hover:-translate-y-0.5">
-                    <i class="fa-solid fa-ticket mr-2"></i> Reservasi Cepat
+                    <i class="fa-solid fa-ticket mr-2"></i> Reservasi
                 </a>
             </div>
         </div>
@@ -387,7 +377,7 @@
                         <p class="text-xs text-slate-500 mb-3">Biji kopi pilihan dataran tinggi Gayo sangrai khas.</p>
                         <div class="flex items-center justify-between">
                             <span class="text-emerald-600 font-extrabold text-sm">Rp 85.000</span>
-                            <button onclick="alert('Kopi Gayo berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-300 transition">
+                            <button onclick="addToCart('Kopi Arabika Gayo Premium', 85000)" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-2 rounded-xl shadow transition">
                                 <i class="fa-solid fa-cart-plus mr-1"></i> Beli
                             </button>
                         </div>
@@ -404,7 +394,7 @@
                         <p class="text-xs text-slate-500 mb-3">Ekstrak patchouli oil murni kualitas ekspor dunia.</p>
                         <div class="flex items-center justify-between">
                             <span class="text-emerald-600 font-extrabold text-sm">Rp 150.000</span>
-                            <button onclick="alert('Parfum Minyak Nilam berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-300 transition">
+                            <button onclick="addToCart('Parfum Minyak Nilam Aceh', 150000)" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-2 rounded-xl shadow transition">
                                 <i class="fa-solid fa-cart-plus mr-1"></i> Beli
                             </button>
                         </div>
@@ -421,7 +411,7 @@
                         <p class="text-xs text-slate-500 mb-3">Tenun tradisional bermotif khas budaya Aceh.</p>
                         <div class="flex items-center justify-between">
                             <span class="text-emerald-600 font-extrabold text-sm">Rp 200.000</span>
-                            <button onclick="alert('Kain Tenun berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-300 transition">
+                            <button onclick="addToCart('Kain Tenun Motif Pinto Aceh', 200000)" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-2 rounded-xl shadow transition">
                                 <i class="fa-solid fa-cart-plus mr-1"></i> Beli
                             </button>
                         </div>
@@ -438,12 +428,29 @@
                         <p class="text-xs text-slate-500 mb-3">Kuliner tradisional olahan ikan higienis zero-waste.</p>
                         <div class="flex items-center justify-between">
                             <span class="text-emerald-600 font-extrabold text-sm">Rp 65.000</span>
-                            <button onclick="alert('Keumamah Vakum berhasil dimasukkan ke keranjang belanja!')" class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-2 rounded-xl border border-emerald-300 transition">
+                            <button onclick="addToCart('Ikan Kayu Keumamah Vakum', 65000)" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-2 rounded-xl shadow transition">
                                 <i class="fa-solid fa-cart-plus mr-1"></i> Beli
                             </button>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Bagian Tampilan Keranjang Belanja Interaktif -->
+            <div id="keranjang" class="mt-16 max-w-3xl mx-auto light-card p-8 rounded-3xl border border-emerald-200 shadow-xl">
+                <h3 class="text-2xl font-extrabold text-slate-900 mb-4 flex items-center">
+                    <i class="fa-solid fa-basket-shopping text-emerald-600 mr-3"></i> Keranjang Belanja Suvenir Anda
+                </h3>
+                <div id="cartItems" class="divide-y divide-slate-200 mb-6 text-sm text-slate-700">
+                    <p class="text-slate-400 py-4 text-center">Keranjang Anda masih kosong. Silakan pilih produk di atas.</p>
+                </div>
+                <div class="border-t border-slate-200 pt-4 flex justify-between items-center font-bold text-lg text-slate-900">
+                    <span>Total Pembayaran:</span>
+                    <span id="cartTotal" class="text-emerald-600">Rp 0</span>
+                </div>
+                <button onclick="checkoutCart()" class="mt-6 w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-3.5 rounded-xl shadow transition">
+                    Checkout / Proses Pesanan Suvenir
+                </button>
             </div>
         </div>
     </section>
@@ -456,11 +463,11 @@
         </div>
     </footer>
 
-    <!-- JavaScript untuk Menampilkan E-Ticket -->
+    <!-- JavaScript untuk E-Ticket & Keranjang Belanja -->
     <script>
+        // Logika Booking Tur
         function handleBooking(event) {
             event.preventDefault();
-            
             const nama = document.getElementById('nama').value;
             const wa = document.getElementById('whatsapp').value;
             const destinasi = document.getElementById('destinasiPilihan').value;
@@ -477,6 +484,65 @@
             const ticketCard = document.getElementById('ticketCard');
             ticketCard.classList.remove('hidden');
             ticketCard.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Logika Keranjang Belanja (E-Commerce)
+        let cart = [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            updateCartUI();
+            alert(name + " berhasil ditambahkan ke keranjang!");
+        }
+
+        function updateCartUI() {
+            const cartCount = document.getElementById('cartCount');
+            const cartItems = document.getElementById('cartItems');
+            const cartTotal = document.getElementById('cartTotal');
+
+            cartCount.innerText = cart.length;
+
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p class="text-slate-400 py-4 text-center">Keranjang Anda masih kosong. Silakan pilih produk di atas.</p>';
+                cartTotal.innerText = 'Rp 0';
+                return;
+            }
+
+            let html = '';
+            let total = 0;
+            cart.forEach((item, index) => {
+                total += item.price;
+                html += `
+                    <div class="py-3 flex justify-between items-center">
+                        <div>
+                            <p class="font-bold text-slate-900">${item.name}</p>
+                            <p class="text-xs text-emerald-600 font-semibold">Rp ${item.price.toLocaleString('id-ID')}</p>
+                        </div>
+                        <button onclick="removeFromCart(${index})" class="text-red-500 hover:text-red-700 text-xs font-bold px-2 py-1">
+                            <i class="fa-solid fa-trash"></i> Hapus
+                        </button>
+                    </div>
+                `;
+            });
+
+            cartItems.innerHTML = html;
+            cartTotal.innerText = 'Rp ' + total.toLocaleString('id-ID');
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartUI();
+        }
+
+        function checkoutCart() {
+            if (cart.length === 0) {
+                alert("Keranjang belanja Anda masih kosong!");
+                return;
+            }
+            let total = cart.reduce((sum, item) => sum + item.price, 0);
+            alert("Checkout Berhasil! Total pembayaran sebesar Rp " + total.toLocaleString('id-ID') + ". Terima kasih telah mendukung UMKM lokal Aceh!");
+            cart = [];
+            updateCartUI();
         }
     </script>
 </body>
